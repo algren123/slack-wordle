@@ -12,3 +12,13 @@ test('hasWon works correctly', () => {
   expect(hasWon(sampleLoseDataArray)).toBe(false);
   expect(hasWon(sampleWonDataArray)).toBe(true);
 });
+
+test('formatResponse works correct', () => {
+  expect(formatResponse(sampleLoseDataArray)).toStrictEqual([
+    'H :black_square:',
+    'E :black_square:',
+    'L :large_orange_square:',
+    'L :large_green_square:',
+    'O :black_square:',
+  ]);
+});
